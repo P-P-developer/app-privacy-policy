@@ -9,7 +9,7 @@
 
 <a name="deutsch"></a>
 
-# 🇩🇪 Datenschutzerklärung für Dortler
+# Datenschutzerklärung für Dortler
 
 **Stand: Februar 2026**
 
@@ -223,7 +223,7 @@ _Letzte Aktualisierung: Februar 2026_
 
 <a name="english"></a>
 
-# 🇬🇧 Privacy Policy for Dortler
+# Privacy Policy for Dortler
 
 **Last updated: February 2026**
 
