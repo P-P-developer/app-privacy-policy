@@ -1,4 +1,4 @@
-# Datenschutzerklärung für Dortler / Privacy Policy for Dortler
+# Datenschutzerklärung für ForceTrack / Privacy Policy for ForceTrack
 
 **Sprache wählen / Choose language:**
 
@@ -9,13 +9,13 @@
 
 <a name="deutsch"></a>
 
-# Datenschutzerklärung für Dortler
+# Datenschutzerklärung für ForceTrack
 
 **Stand: Februar 2026**
 
 ## 1. Einleitung
 
-Diese Datenschutzerklärung informiert Sie über die Art, den Umfang und den Zweck der Verarbeitung personenbezogener Daten innerhalb der mobilen Anwendung "Dortler" (nachfolgend "App"). Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst und behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.
+Diese Datenschutzerklärung informiert Sie über die Art, den Umfang und den Zweck der Verarbeitung personenbezogener Daten innerhalb der mobilen Anwendung "ForceTrack" (nachfolgend "App"). Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst und behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.
 
 **Verantwortlicher:**  
 Patrick Pfüller  
@@ -23,7 +23,7 @@ E-Mail: app-patrick@web.de
 
 ## 2. Übersicht der App-Funktionen
 
-Dortler ist eine Trainings-App für das Tracking von Krafttraining. Die App ermöglicht es Ihnen:
+ForceTrack ist eine Trainings-App für das Tracking von Krafttraining. Die App ermöglicht es Ihnen:
 
 - Trainingspläne zu erstellen und zu verwalten
 - Trainingsübungen anzulegen und zu konfigurieren
@@ -172,7 +172,7 @@ Bei Fragen zum Datenschutz oder zur Ausübung Ihrer Rechte können Sie uns konta
 
 ## 14. Technische Informationen
 
-- **App-Name:** Dortler
+- **App-Name:** ForceTrack
 - **Entwickler:** Patrick Pfüller
 - **Plattform:** Android
 - **Mindest-Android-Version:** Android 7.0 (API Level 24)
@@ -209,7 +209,7 @@ Die Verarbeitung Ihrer Daten erfolgt auf folgenden Rechtsgrundlagen:
 ---
 
 **Zusammenfassung:**  
-Dortler ist eine datenschutzfreundliche Trainings-App. Alle Ihre Trainingsdaten werden ausschließlich lokal auf Ihrem Gerät gespeichert. Es erfolgt kein Tracking, keine Werbung und keine automatische Datenübertragung. Nur bei Nutzung der optionalen Feedback-Funktion werden anonyme Daten übermittelt.
+ForceTrack ist eine datenschutzfreundliche Trainings-App. Alle Ihre Trainingsdaten werden ausschließlich lokal auf Ihrem Gerät gespeichert. Es erfolgt kein Tracking, keine Werbung und keine automatische Datenübertragung. Nur bei Nutzung der optionalen Feedback-Funktion werden anonyme Daten übermittelt.
 
 ---
 
@@ -223,13 +223,13 @@ _Letzte Aktualisierung: Februar 2026_
 
 <a name="english"></a>
 
-# Privacy Policy for Dortler
+# Privacy Policy for ForceTrack
 
 **Last updated: February 2026**
 
 ## 1. Introduction
 
-This privacy policy informs you about the nature, scope, and purpose of the processing of personal data within the mobile application "Dortler" (hereinafter "App"). We take the protection of your personal data very seriously and treat your personal data confidentially and in accordance with statutory data protection regulations and this privacy policy.
+This privacy policy informs you about the nature, scope, and purpose of the processing of personal data within the mobile application "ForceTrack" (hereinafter "App"). We take the protection of your personal data very seriously and treat your personal data confidentially and in accordance with statutory data protection regulations and this privacy policy.
 
 **Data Controller:**  
 Patrick Pfüller  
@@ -237,7 +237,7 @@ Email: app-patrick@web.de
 
 ## 2. Overview of App Functions
 
-Dortler is a fitness training app for tracking strength training. The app allows you to:
+ForceTrack is a fitness training app for tracking strength training. The app allows you to:
 
 - Create and manage training plans
 - Add and configure training exercises
@@ -386,7 +386,7 @@ For questions about data protection or to exercise your rights, you can contact 
 
 ## 14. Technical Information
 
-- **App Name:** Dortler
+- **App Name:** ForceTrack
 - **Developer:** Patrick Pfüller
 - **Platform:** Android
 - **Minimum Android Version:** Android 7.0 (API Level 24)
@@ -423,7 +423,7 @@ The processing of your data is based on the following legal grounds:
 ---
 
 **Summary:**  
-Dortler is a privacy-friendly fitness training app. All your training data is stored exclusively locally on your device. There is no tracking, no advertising, and no automatic data transmission. Only when using the optional feedback function is anonymous data transmitted.
+ForceTrack is a privacy-friendly fitness training app. All your training data is stored exclusively locally on your device. There is no tracking, no advertising, and no automatic data transmission. Only when using the optional feedback function is anonymous data transmitted.
 
 ---
 
