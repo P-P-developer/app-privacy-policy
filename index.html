@@ -1,0 +1,1372 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ForceTrack — Privacy Policy / Datenschutzerklärung</title>
+    <style>
+      :root {
+        --primary: #4c4c4c;
+        --primary-dim: #b5b5b5;
+        --secondary: #c0c0c0;
+        --background: #ffffff;
+        --outline: #d9d9d9;
+        --blue-50: #a6c3cf;
+        --blue-100: #4e87a0;
+        --blue-300: #07bad1;
+        --yellow-100: #daaa00;
+        --green-100: #808c24;
+        --gray-15: #d9d9d9;
+        --gray-35: #b9b9ba;
+        --gray-80: #313132;
+        --error: rgba(179, 38, 30, 1);
+        --radius-card: 10px;
+        --radius-button: 10px;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+        font-weight: 400;
+        letter-spacing: 0.25px;
+        color: var(--primary);
+        background: var(--background);
+        line-height: 1.6;
+      }
+
+      .hero {
+        text-align: center;
+        padding: 60px 20px 40px;
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9edf0 100%);
+        border-bottom: 1px solid var(--outline);
+      }
+
+      .hero-icon {
+        font-size: 64px;
+        margin-bottom: 8px;
+      }
+
+      .hero h1 {
+        font-size: 36px;
+        font-weight: 600;
+        color: var(--gray-80);
+        margin-bottom: 4px;
+        letter-spacing: -0.5px;
+      }
+
+      .hero .subtitle {
+        font-size: 16px;
+        color: var(--gray-35);
+        margin-bottom: 28px;
+      }
+
+      .badges {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        margin-bottom: 32px;
+      }
+
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 6px 14px;
+        border-radius: 20px;
+        font-size: 13px;
+        font-weight: 600;
+        color: #fff;
+        letter-spacing: 0.3px;
+      }
+
+      .badge-blue {
+        background: var(--blue-100);
+      }
+      .badge-dark {
+        background: var(--primary);
+      }
+      .badge-green {
+        background: var(--green-100);
+      }
+      .badge-yellow {
+        background: var(--yellow-100);
+      }
+
+      .pillars {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 16px;
+        max-width: 680px;
+        margin: 0 auto 32px;
+      }
+
+      .pillar {
+        background: #fff;
+        border: 1px solid var(--outline);
+        border-radius: var(--radius-card);
+        padding: 20px 12px;
+        text-align: center;
+      }
+
+      .pillar-icon {
+        font-size: 28px;
+        margin-bottom: 6px;
+      }
+
+      .pillar-title {
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--gray-80);
+        margin-bottom: 2px;
+      }
+
+      .pillar-sub {
+        font-size: 12px;
+        color: var(--gray-35);
+      }
+
+      .lang-switch {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+
+      .lang-btn {
+        display: inline-block;
+        padding: 10px 28px;
+        border-radius: var(--radius-button);
+        font-size: 15px;
+        font-weight: 600;
+        text-decoration: none;
+        transition:
+          opacity 0.2s,
+          transform 0.15s;
+      }
+
+      .lang-btn:hover {
+        opacity: 0.88;
+        transform: translateY(-1px);
+      }
+
+      .lang-btn-de {
+        background: var(--primary);
+        color: #fff;
+      }
+
+      .lang-btn-en {
+        background: var(--blue-100);
+        color: #fff;
+      }
+
+      .container {
+        max-width: 780px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      .section-header {
+        text-align: center;
+        padding: 48px 0 8px;
+      }
+
+      .section-header h2 {
+        font-size: 28px;
+        font-weight: 600;
+        color: var(--gray-80);
+      }
+
+      .section-header .date {
+        font-size: 13px;
+        color: var(--gray-35);
+      }
+
+      .divider {
+        height: 1px;
+        background: var(--outline);
+        margin: 32px 0;
+      }
+
+      h3 {
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--gray-80);
+        margin-bottom: 12px;
+      }
+
+      h4 {
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--gray-80);
+        margin: 20px 0 8px;
+      }
+
+      p,
+      li {
+        font-size: 15px;
+        line-height: 1.7;
+        color: var(--primary);
+      }
+
+      ul {
+        padding-left: 22px;
+        margin: 8px 0;
+      }
+
+      li {
+        margin-bottom: 4px;
+      }
+
+      a {
+        color: var(--blue-100);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .callout {
+        background: #f5f7f8;
+        border-left: 4px solid var(--blue-100);
+        border-radius: 0 var(--radius-card) var(--radius-card) 0;
+        padding: 14px 18px;
+        margin: 16px 0;
+        font-size: 14px;
+      }
+
+      .callout-warn {
+        border-left-color: var(--yellow-100);
+        background: #fdf9ed;
+      }
+
+      .callout strong {
+        color: var(--gray-80);
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 12px 0;
+        font-size: 14px;
+      }
+
+      thead th {
+        text-align: left;
+        padding: 10px 14px;
+        background: #f5f7f8;
+        border-bottom: 2px solid var(--outline);
+        font-weight: 600;
+        color: var(--gray-80);
+      }
+
+      tbody td {
+        padding: 10px 14px;
+        border-bottom: 1px solid var(--outline);
+        vertical-align: top;
+      }
+
+      .feature-table tbody td:first-child {
+        width: 36px;
+        text-align: center;
+        font-size: 18px;
+      }
+
+      .no-track-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin: 12px 0;
+      }
+
+      .no-track-item {
+        background: #f5f7f8;
+        border-radius: var(--radius-card);
+        padding: 12px 16px;
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--primary);
+      }
+
+      details {
+        margin: 12px 0;
+        border: 1px solid var(--outline);
+        border-radius: var(--radius-card);
+        overflow: hidden;
+      }
+
+      details summary {
+        padding: 14px 18px;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--gray-80);
+        background: #f9fafb;
+        border-bottom: 1px solid transparent;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      details summary::before {
+        content: '▶';
+        font-size: 10px;
+        transition: transform 0.2s;
+        color: var(--gray-35);
+      }
+
+      details[open] summary::before {
+        transform: rotate(90deg);
+      }
+
+      details summary::-webkit-details-marker {
+        display: none;
+      }
+
+      details[open] summary {
+        border-bottom-color: var(--outline);
+      }
+
+      details .details-body {
+        padding: 18px;
+      }
+
+      .summary-box {
+        text-align: center;
+        background: #f5f7f8;
+        border-radius: var(--radius-card);
+        padding: 24px 20px;
+        margin: 32px 0;
+        border: 1px solid var(--outline);
+      }
+
+      .summary-box p {
+        font-size: 15px;
+        color: var(--primary);
+        max-width: 580px;
+        margin: 0 auto;
+      }
+
+      .summary-box .date-sub {
+        font-size: 12px;
+        color: var(--gray-35);
+        margin-top: 12px;
+      }
+
+      footer {
+        text-align: center;
+        padding: 32px 20px;
+        font-size: 12px;
+        color: var(--gray-35);
+        border-top: 1px solid var(--outline);
+        margin-top: 48px;
+      }
+
+      @media (max-width: 600px) {
+        .hero {
+          padding: 40px 16px 28px;
+        }
+        .hero h1 {
+          font-size: 28px;
+        }
+        .pillars {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 10px;
+        }
+        .no-track-grid {
+          grid-template-columns: 1fr;
+        }
+        .container {
+          padding: 0 16px;
+        }
+        h3 {
+          font-size: 18px;
+        }
+        table {
+          font-size: 13px;
+        }
+        thead th,
+        tbody td {
+          padding: 8px 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ======================== HERO ======================== -->
+    <div class="hero">
+      <div class="hero-icon">🏋️</div>
+      <h1>ForceTrack</h1>
+      <p class="subtitle">Privacy Policy / Datenschutzerklärung</p>
+
+      <div class="badges">
+        <span class="badge badge-blue">📱 Android</span>
+        <span class="badge badge-dark">⚛️ React Native / Expo</span>
+        <span class="badge badge-green">💾 Local Only</span>
+        <span class="badge badge-yellow">🚫 No Tracking</span>
+      </div>
+
+      <div class="pillars">
+        <div class="pillar">
+          <div class="pillar-icon">🔒</div>
+          <div class="pillar-title">Local Data</div>
+          <div class="pillar-sub">All training data stays on your device</div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon">🚫</div>
+          <div class="pillar-title">No Tracking</div>
+          <div class="pillar-sub">No analytics, ads, or cookies</div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon">🛡️</div>
+          <div class="pillar-title">GDPR</div>
+          <div class="pillar-sub">Fully compliant</div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon">📤</div>
+          <div class="pillar-title">Your Control</div>
+          <div class="pillar-sub">Export &amp; import anytime</div>
+        </div>
+      </div>
+
+      <div class="lang-switch">
+        <a href="#de" class="lang-btn lang-btn-de">🇩🇪 Deutsch</a>
+        <a href="#en" class="lang-btn lang-btn-en">🇬🇧 English</a>
+      </div>
+    </div>
+
+    <!-- ======================== GERMAN ======================== -->
+    <div class="container">
+      <div class="section-header" id="de">
+        <h2>🇩🇪 Datenschutzerklärung</h2>
+        <p class="date">Stand: Februar 2026</p>
+      </div>
+
+      <div class="divider"></div>
+
+      <h3>1 · Einleitung</h3>
+      <p>
+        Diese Datenschutzerklärung informiert Sie über die Art, den Umfang und
+        den Zweck der Verarbeitung personenbezogener Daten innerhalb der mobilen
+        Anwendung <strong>ForceTrack</strong> (nachfolgend „App"). Wir nehmen
+        den Schutz Ihrer persönlichen Daten sehr ernst und behandeln Ihre
+        personenbezogenen Daten vertraulich und entsprechend der gesetzlichen
+        Datenschutzvorschriften sowie dieser Datenschutzerklärung.
+      </p>
+      <div class="callout">
+        <strong>Verantwortlicher</strong><br />
+        Patrick Pfüller ·
+        <a href="mailto:app-patrick@web.de">app-patrick@web.de</a>
+      </div>
+
+      <div class="divider"></div>
+
+      <h3>2 · Übersicht der App-Funktionen</h3>
+      <p>
+        ForceTrack ist eine Trainings-App für das Tracking von Krafttraining.
+        Die App ermöglicht es Ihnen:
+      </p>
+      <table class="feature-table">
+        <tbody>
+          <tr>
+            <td>📋</td>
+            <td>Trainingspläne erstellen und verwalten</td>
+          </tr>
+          <tr>
+            <td>💪</td>
+            <td>Trainingsübungen anlegen und konfigurieren</td>
+          </tr>
+          <tr>
+            <td>▶️</td>
+            <td>Trainingseinheiten durchführen und dokumentieren</td>
+          </tr>
+          <tr>
+            <td>📊</td>
+            <td>Trainingsfortschritte und Statistiken analysieren</td>
+          </tr>
+          <tr>
+            <td>📅</td>
+            <td>Trainingsverlauf einsehen</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="divider"></div>
+
+      <h3>3 · Welche Daten werden erhoben?</h3>
+
+      <details open>
+        <summary>3.1 — Lokal gespeicherte Daten (auf Ihrem Gerät)</summary>
+        <div class="details-body">
+          <p>
+            Die App speichert folgende Daten
+            <strong>ausschließlich lokal auf Ihrem Gerät</strong> in einer
+            SQLite-Datenbank:
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>Kategorie</th>
+                <th>Datenfelder</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Trainingspläne</strong></td>
+                <td>Name, Symbol</td>
+              </tr>
+              <tr>
+                <td><strong>Trainingsübungen</strong></td>
+                <td>
+                  Name, Notizen, Geräteeinstellung, Gewicht, Gewichtseinheit,
+                  Wiederholungen, Reihenfolge, Symbol
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Trainingssitzungen</strong></td>
+                <td>
+                  Übungs-ID, durchgeführtes Gewicht, absolvierte Wiederholungen,
+                  Status (erledigt/übersprungen), Zeitstempel
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="callout">
+            🔒 Diese Daten verlassen Ihr Gerät nicht und werden nicht an Server
+            oder Dritte übertragen.
+          </div>
+        </div>
+      </details>
+
+      <details>
+        <summary>3.2 — Feedback-Funktion (optional)</summary>
+        <div class="details-body">
+          <p>
+            Wenn Sie die optionale Feedback-Funktion nutzen, werden folgende
+            Daten <strong>anonym</strong> übermittelt:
+          </p>
+          <ul>
+            <li>Ihre Sternebewertung (1–5 Sterne)</li>
+            <li>Ihr optionaler Feedback-Text</li>
+          </ul>
+          <div class="callout callout-warn">
+            ⚠️ Es werden dabei
+            <strong>keine personenbezogenen Daten</strong> erhoben. Das Feedback
+            wird über Google Apps Script an eine Google Tabelle übermittelt. Es
+            werden keine Identifizierungsmerkmale wie Geräte-ID, IP-Adresse oder
+            Nutzername gespeichert.
+          </div>
+        </div>
+      </details>
+
+      <details>
+        <summary>3.3 — App-Updates und Drittanbieter-Dienste (Expo)</summary>
+        <div class="details-body">
+          <p>
+            Die App wurde mit dem Framework <strong>Expo</strong> (650
+            Industries, Inc., USA) entwickelt. Im Rahmen der Nutzung können
+            durch Expo folgende technische Daten verarbeitet werden:
+          </p>
+          <h4>Expo Updates</h4>
+          <p>
+            Die App nutzt den Dienst „Expo Updates" zur Bereitstellung von
+            App-Aktualisierungen. Bei der Prüfung auf Updates werden folgende
+            <strong>nicht-personenbezogene</strong> technische Daten
+            übermittelt:
+          </p>
+          <ul>
+            <li>Betriebssystem des Geräts</li>
+            <li>Projekt-ID des Entwicklers</li>
+            <li>
+              Ein zufällig generierter Token zur Feststellung, ob ein Update
+              bereits heruntergeladen wurde
+            </li>
+          </ul>
+          <div class="callout">
+            Es werden dabei <strong>keine</strong> eindeutigen
+            Geräte-Identifikatoren oder personenbezogenen Daten übertragen.
+          </div>
+          <h4>Datenverarbeitung durch Expo</h4>
+          <p>
+            Expo agiert als Auftragsverarbeiter und verarbeitet die genannten
+            technischen Daten ausschließlich zur Bereitstellung der
+            Update-Funktionalität. Expo ist DSGVO-, CCPA- und Data Privacy
+            Framework-konform. Weitere Informationen:
+            <a href="https://expo.dev/privacy" target="_blank" rel="noopener"
+              >expo.dev/privacy</a
+            >
+          </p>
+          <h4>Keine Push-Benachrichtigungen</h4>
+          <p>
+            Die App verwendet keine Push-Benachrichtigungen, daher werden keine
+            Push-Tokens erhoben oder an Expo übermittelt.
+          </p>
+        </div>
+      </details>
+
+      <div class="divider"></div>
+
+      <h3>4 · Welche Berechtigungen benötigt die App?</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Berechtigung</th>
+            <th>Zweck</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              📁
+              <strong>Speicherzugriff</strong>
+              (<code>READ_EXTERNAL_STORAGE</code>)
+            </td>
+            <td>
+              Import &amp; Export von Datenbank-Backups zur Wiederherstellung
+              Ihrer Trainingsdaten
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="divider"></div>
+
+      <h3>5 · Datenspeicherung und Sicherheit</h3>
+      <h4>5.1 — Lokale Speicherung</h4>
+      <p>
+        Alle Ihre Trainingsdaten werden
+        <strong>ausschließlich lokal</strong> auf Ihrem Gerät in einer
+        SQLite-Datenbank gespeichert. Die App verfügt über keine eigenen Server
+        oder Cloud-Dienste zur Datenspeicherung.
+      </p>
+      <h4>5.2 — Export und Import</h4>
+      <table>
+        <thead>
+          <tr>
+            <th>Funktion</th>
+            <th>Beschreibung</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>📤 <strong>Export</strong></td>
+            <td>
+              Datenbank-Datei exportieren und an einem Ort Ihrer Wahl speichern
+              (z.&nbsp;B. für Backups)
+            </td>
+          </tr>
+          <tr>
+            <td>📥 <strong>Import</strong></td>
+            <td>
+              Zuvor exportierte Datenbanken importieren, um Ihre Daten
+              wiederherzustellen
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="callout">
+        Diese Funktionen dienen der Datensicherung und dem Transfer zwischen
+        Geräten. Die Verantwortung für die sichere Aufbewahrung exportierter
+        Daten liegt bei Ihnen.
+      </div>
+
+      <div class="divider"></div>
+
+      <h3>6 · Datenweitergabe an Dritte</h3>
+      <p>
+        Wir geben Ihre personenbezogenen Daten <strong>nicht</strong> an Dritte
+        weiter, es sei denn:
+      </p>
+      <ul>
+        <li>Sie haben Ihre ausdrückliche Einwilligung gegeben</li>
+        <li>Es besteht eine gesetzliche Verpflichtung</li>
+      </ul>
+      <p>
+        Bei Nutzung der Feedback-Funktion werden die anonymen Feedback-Daten
+        über Google Apps Script verarbeitet und in einer Google Tabelle
+        gespeichert. Dies geschieht auf Grundlage Ihrer freiwilligen Nutzung.
+      </p>
+
+      <div class="divider"></div>
+
+      <h3>7 · Keine Werbung, kein Tracking</h3>
+      <div class="no-track-grid">
+        <div class="no-track-item">🚫 Keine Werbung</div>
+        <div class="no-track-item">🚫 Keine Analyse- oder Tracking-Tools</div>
+        <div class="no-track-item">🚫 Keine Social Media Plugins</div>
+        <div class="no-track-item">🚫 Keine Cookies</div>
+      </div>
+
+      <div class="divider"></div>
+
+      <h3>8 · Ihre Rechte</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Recht</th>
+            <th>Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>🔍 <strong>Auskunft</strong></td>
+            <td>
+              Jederzeit Ihre in der App gespeicherten Daten einsehen
+              (Trainingshistorie, Statistiken)
+            </td>
+          </tr>
+          <tr>
+            <td>🗑️ <strong>Löschung</strong></td>
+            <td>
+              Einzelne Übungen, Trainingseinheiten oder gesamte Datenbank durch
+              Deinstallation löschen
+            </td>
+          </tr>
+          <tr>
+            <td>📤 <strong>Datenübertragbarkeit</strong></td>
+            <td>
+              Daten über die Export-Funktion in den Einstellungen exportieren
+            </td>
+          </tr>
+          <tr>
+            <td>🎛️ <strong>Volle Kontrolle</strong></td>
+            <td>
+              Alle Daten liegen lokal auf Ihrem Gerät — Sie haben jederzeit
+              volle Kontrolle
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="divider"></div>
+
+      <h3>9 · Datensicherheit</h3>
+      <p>Wir empfehlen folgende Maßnahmen zum Schutz Ihrer Daten:</p>
+      <ul>
+        <li>🔐 Nutzen Sie die Bildschirmsperre Ihres Geräts</li>
+        <li>💾 Erstellen Sie regelmäßig Backups über die Export-Funktion</li>
+        <li>🗄️ Bewahren Sie exportierte Backups sicher auf</li>
+      </ul>
+
+      <div class="divider"></div>
+
+      <h3>10 · Aufbewahrungsdauer</h3>
+      <ul>
+        <li>
+          <strong>Lokale Daten</strong> — Ihre Trainingsdaten bleiben auf Ihrem
+          Gerät gespeichert, bis Sie diese manuell löschen oder die App
+          deinstallieren
+        </li>
+        <li>
+          <strong>Feedback-Daten</strong> — Übermittelte Feedback-Daten werden
+          auf unbestimmte Zeit in der Google Tabelle des Entwicklers gespeichert
+        </li>
+      </ul>
+
+      <div class="divider"></div>
+
+      <h3>11 · Kinder</h3>
+      <p>
+        Die App ist nicht speziell für Kinder unter 16 Jahren konzipiert. Wir
+        erheben wissentlich keine personenbezogenen Daten von Kindern unter 16
+        Jahren.
+      </p>
+
+      <div class="divider"></div>
+
+      <h3>12 · Änderungen dieser Datenschutzerklärung</h3>
+      <p>
+        Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf anzupassen,
+        um sie an geänderte Rechtslage oder bei Änderungen der App anzupassen.
+        Die aktuelle Version ist immer in der App bzw. im App Store einsehbar.
+      </p>
+
+      <div class="divider"></div>
+
+      <h3>13 · Kontakt</h3>
+      <p>Bei Fragen zum Datenschutz oder zur Ausübung Ihrer Rechte:</p>
+      <div class="callout">
+        📧 <strong>E-Mail:</strong>
+        <a href="mailto:app-patrick@web.de">app-patrick@web.de</a>
+      </div>
+
+      <div class="divider"></div>
+
+      <h3>14 · Technische Informationen</h3>
+      <table>
+        <tbody>
+          <tr>
+            <td><strong>App-Name</strong></td>
+            <td>ForceTrack</td>
+          </tr>
+          <tr>
+            <td><strong>Entwickler</strong></td>
+            <td>Patrick Pfüller</td>
+          </tr>
+          <tr>
+            <td><strong>Plattform</strong></td>
+            <td>Android</td>
+          </tr>
+          <tr>
+            <td><strong>Mindest-Android-Version</strong></td>
+            <td>Android 7.0 (API Level 24)</td>
+          </tr>
+          <tr>
+            <td><strong>Datenbank</strong></td>
+            <td>SQLite (lokale Speicherung)</td>
+          </tr>
+          <tr>
+            <td><strong>Framework</strong></td>
+            <td>React Native / Expo</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="divider"></div>
+
+      <h3>15 · Haftungsausschluss für Drittanbieter-Dienste</h3>
+      <p>
+        Diese App nutzt Dienste von Drittanbietern (insbesondere Expo / 650
+        Industries, Inc.). Obwohl wir sorgfältig Drittanbieter auswählen, die
+        angemessene Datenschutzstandards einhalten, haben wir keine direkte
+        Kontrolle über deren Datenverarbeitungspraktiken.
+      </p>
+      <p><strong>Wir übernehmen keine Haftung für:</strong></p>
+      <ul>
+        <li>
+          Datenverarbeitung durch Drittanbieter, die über das in dieser
+          Datenschutzerklärung Beschriebene hinausgeht
+        </li>
+        <li>Änderungen an den Datenschutzpraktiken der Drittanbieter</li>
+        <li>Sicherheitsvorfälle bei Drittanbietern</li>
+      </ul>
+      <p><strong>Datenschutzrichtlinien der Drittanbieter:</strong></p>
+      <ul>
+        <li>
+          <a href="https://expo.dev/privacy" target="_blank" rel="noopener"
+            >Expo — expo.dev/privacy</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://policies.google.com/privacy"
+            target="_blank"
+            rel="noopener"
+            >Google — policies.google.com/privacy</a
+          >
+        </li>
+      </ul>
+
+      <div class="divider"></div>
+
+      <h3>16 · Rechtsgrundlagen der Verarbeitung (DSGVO)</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Verarbeitung</th>
+            <th>Rechtsgrundlage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Lokale Speicherung von Trainingsdaten</td>
+            <td>Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung)</td>
+          </tr>
+          <tr>
+            <td>Feedback-Funktion</td>
+            <td>
+              Art. 6 Abs. 1 lit. a DSGVO (Einwilligung durch freiwillige
+              Nutzung)
+            </td>
+          </tr>
+          <tr>
+            <td>App-Updates über Expo</td>
+            <td>
+              Art. 6 Abs. 1 lit. f DSGVO (Berechtigtes Interesse an
+              Bereitstellung aktueller Software)
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="summary-box">
+        <p>
+          <strong>Zusammenfassung:</strong> ForceTrack ist eine
+          datenschutzfreundliche Trainings-App. Alle Ihre Trainingsdaten werden
+          ausschließlich lokal auf Ihrem Gerät gespeichert. Es erfolgt kein
+          Tracking, keine Werbung und keine automatische Datenübertragung. Nur
+          bei Nutzung der optionalen Feedback-Funktion werden anonyme Daten
+          übermittelt.
+        </p>
+        <p class="date-sub">Letzte Aktualisierung: Februar 2026</p>
+      </div>
+
+      <!-- ======================== DIVIDER ======================== -->
+      <div
+        style="height: 2px; background: var(--outline); margin: 48px 0"
+      ></div>
+
+      <!-- ======================== ENGLISH ======================== -->
+      <div class="section-header" id="en">
+        <h2>🇬🇧 Privacy Policy</h2>
+        <p class="date">Last updated: February 2026</p>
+      </div>
+
+      <div class="divider"></div>
+
+      <h3>1 · Introduction</h3>
+      <p>
+        This privacy policy informs you about the nature, scope, and purpose of
+        the processing of personal data within the mobile application
+        <strong>ForceTrack</strong> (hereinafter "App"). We take the protection
+        of your personal data very seriously and treat your personal data
+        confidentially and in accordance with statutory data protection
+        regulations and this privacy policy.
+      </p>
+      <div class="callout">
+        <strong>Data Controller</strong><br />
+        Patrick Pfüller ·
+        <a href="mailto:app-patrick@web.de">app-patrick@web.de</a>
+      </div>
+
+      <div class="divider"></div>
+
+      <h3>2 · Overview of App Functions</h3>
+      <p>
+        ForceTrack is a fitness training app for tracking strength training. The
+        app allows you to:
+      </p>
+      <table class="feature-table">
+        <tbody>
+          <tr>
+            <td>📋</td>
+            <td>Create and manage training plans</td>
+          </tr>
+          <tr>
+            <td>💪</td>
+            <td>Add and configure training exercises</td>
+          </tr>
+          <tr>
+            <td>▶️</td>
+            <td>Perform and document training sessions</td>
+          </tr>
+          <tr>
+            <td>📊</td>
+            <td>Analyze training progress and statistics</td>
+          </tr>
+          <tr>
+            <td>📅</td>
+            <td>View training history</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="divider"></div>
+
+      <h3>3 · What Data is Collected?</h3>
+
+      <details open>
+        <summary>3.1 — Locally Stored Data (on your device)</summary>
+        <div class="details-body">
+          <p>
+            The app stores the following data
+            <strong>exclusively locally on your device</strong> in a SQLite
+            database:
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Data Fields</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Training plans</strong></td>
+                <td>Name, icon</td>
+              </tr>
+              <tr>
+                <td><strong>Training exercises</strong></td>
+                <td>
+                  Name, notes, equipment settings, weight, weight unit,
+                  repetitions, order, icon
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Training sessions</strong></td>
+                <td>
+                  Exercise ID, performed weight, completed repetitions, status
+                  (completed/skipped), timestamp
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="callout">
+            🔒 This data does not leave your device and is not transmitted to
+            servers or third parties.
+          </div>
+        </div>
+      </details>
+
+      <details>
+        <summary>3.2 — Feedback Function (optional)</summary>
+        <div class="details-body">
+          <p>
+            If you use the optional feedback function, the following data is
+            transmitted <strong>anonymously</strong>:
+          </p>
+          <ul>
+            <li>Your star rating (1–5 stars)</li>
+            <li>Your optional feedback text</li>
+          </ul>
+          <div class="callout callout-warn">
+            ⚠️ <strong>No personal data</strong> is collected. The feedback is
+            transmitted via Google Apps Script to a Google Spreadsheet. No
+            identifying information such as device ID, IP address, or username
+            is stored.
+          </div>
+        </div>
+      </details>
+
+      <details>
+        <summary>3.3 — App Updates and Third-Party Services (Expo)</summary>
+        <div class="details-body">
+          <p>
+            The app was developed using the <strong>Expo</strong> framework (650
+            Industries, Inc., USA). When using the app, the following technical
+            data may be processed by Expo:
+          </p>
+          <h4>Expo Updates</h4>
+          <p>
+            The app uses the "Expo Updates" service to provide app updates. When
+            checking for updates, the following
+            <strong>non-personal</strong> technical data is transmitted:
+          </p>
+          <ul>
+            <li>Device operating system</li>
+            <li>Developer's project ID</li>
+            <li>
+              A randomly generated token to determine if an update has already
+              been downloaded
+            </li>
+          </ul>
+          <div class="callout">
+            <strong>No</strong> unique device identifiers or personal data are
+            transmitted.
+          </div>
+          <h4>Data Processing by Expo</h4>
+          <p>
+            Expo acts as a data processor and processes the aforementioned
+            technical data solely for providing update functionality. Expo is
+            GDPR, CCPA, and Data Privacy Framework compliant. More information:
+            <a href="https://expo.dev/privacy" target="_blank" rel="noopener"
+              >expo.dev/privacy</a
+            >
+          </p>
+          <h4>No Push Notifications</h4>
+          <p>
+            The app does not use push notifications, therefore no push tokens
+            are collected or transmitted to Expo.
+          </p>
+        </div>
+      </details>
+
+      <div class="divider"></div>
+
+      <h3>4 · What Permissions Does the App Require?</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Permission</th>
+            <th>Purpose</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              📁
+              <strong>Storage Access</strong>
+              (<code>READ_EXTERNAL_STORAGE</code>)
+            </td>
+            <td>
+              Import &amp; export database backups to restore your training data
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="divider"></div>
+
+      <h3>5 · Data Storage and Security</h3>
+      <h4>5.1 — Local Storage</h4>
+      <p>
+        All your training data is stored <strong>exclusively locally</strong> on
+        your device in a SQLite database. The app does not have its own servers
+        or cloud services for data storage.
+      </p>
+      <h4>5.2 — Export and Import</h4>
+      <table>
+        <thead>
+          <tr>
+            <th>Function</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>📤 <strong>Export</strong></td>
+            <td>
+              Export your database file and save it to a location of your choice
+              (e.g., for backups)
+            </td>
+          </tr>
+          <tr>
+            <td>📥 <strong>Import</strong></td>
+            <td>Import previously exported databases to restore your data</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="callout">
+        These functions are for data backup and transfer between devices. The
+        responsibility for the secure storage of exported data lies with you.
+      </div>
+
+      <div class="divider"></div>
+
+      <h3>6 · Data Sharing with Third Parties</h3>
+      <p>
+        We do <strong>not</strong> share your personal data with third parties
+        unless:
+      </p>
+      <ul>
+        <li>You have given your explicit consent</li>
+        <li>There is a legal obligation</li>
+      </ul>
+      <p>
+        If you use the feedback function, the anonymous feedback data is
+        processed via Google Apps Script and stored in a Google Spreadsheet.
+        This is done based on your voluntary use of the feedback function.
+      </p>
+
+      <div class="divider"></div>
+
+      <h3>7 · No Advertising, No Tracking</h3>
+      <div class="no-track-grid">
+        <div class="no-track-item">🚫 No advertising</div>
+        <div class="no-track-item">🚫 No analytics or tracking tools</div>
+        <div class="no-track-item">🚫 No social media plugins</div>
+        <div class="no-track-item">🚫 No cookies</div>
+      </div>
+
+      <div class="divider"></div>
+
+      <h3>8 · Your Rights</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Right</th>
+            <th>Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>🔍 <strong>Access</strong></td>
+            <td>
+              View your data stored in the app at any time (training history,
+              statistics)
+            </td>
+          </tr>
+          <tr>
+            <td>🗑️ <strong>Deletion</strong></td>
+            <td>
+              Delete individual exercises, training sessions, or the entire
+              database by uninstalling the app
+            </td>
+          </tr>
+          <tr>
+            <td>📤 <strong>Data Portability</strong></td>
+            <td>Export your data via the export function in settings</td>
+          </tr>
+          <tr>
+            <td>🎛️ <strong>Full Control</strong></td>
+            <td>
+              All data is stored locally on your device — you have full control
+              at all times
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="divider"></div>
+
+      <h3>9 · Data Security</h3>
+      <p>We recommend the following measures to protect your data:</p>
+      <ul>
+        <li>🔐 Use your device's screen lock</li>
+        <li>💾 Create regular backups via the export function</li>
+        <li>🗄️ Store exported backups securely</li>
+      </ul>
+
+      <div class="divider"></div>
+
+      <h3>10 · Retention Period</h3>
+      <ul>
+        <li>
+          <strong>Local data</strong> — Your training data remains stored on
+          your device until you manually delete it or uninstall the app
+        </li>
+        <li>
+          <strong>Feedback data</strong> — Submitted feedback data is stored
+          indefinitely in the developer's Google Spreadsheet
+        </li>
+      </ul>
+
+      <div class="divider"></div>
+
+      <h3>11 · Children</h3>
+      <p>
+        The app is not specifically designed for children under 16 years of age.
+        We do not knowingly collect personal data from children under 16 years
+        of age.
+      </p>
+
+      <div class="divider"></div>
+
+      <h3>12 · Changes to This Privacy Policy</h3>
+      <p>
+        We reserve the right to adapt this privacy policy as necessary to comply
+        with changed legal requirements or when changes are made to the app. The
+        current version is always available in the app or in the app store.
+      </p>
+
+      <div class="divider"></div>
+
+      <h3>13 · Contact</h3>
+      <p>For questions about data protection or to exercise your rights:</p>
+      <div class="callout">
+        📧 <strong>Email:</strong>
+        <a href="mailto:app-patrick@web.de">app-patrick@web.de</a>
+      </div>
+
+      <div class="divider"></div>
+
+      <h3>14 · Technical Information</h3>
+      <table>
+        <tbody>
+          <tr>
+            <td><strong>App Name</strong></td>
+            <td>ForceTrack</td>
+          </tr>
+          <tr>
+            <td><strong>Developer</strong></td>
+            <td>Patrick Pfüller</td>
+          </tr>
+          <tr>
+            <td><strong>Platform</strong></td>
+            <td>Android</td>
+          </tr>
+          <tr>
+            <td><strong>Minimum Android Version</strong></td>
+            <td>Android 7.0 (API Level 24)</td>
+          </tr>
+          <tr>
+            <td><strong>Database</strong></td>
+            <td>SQLite (local storage)</td>
+          </tr>
+          <tr>
+            <td><strong>Framework</strong></td>
+            <td>React Native / Expo</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="divider"></div>
+
+      <h3>15 · Disclaimer for Third-Party Services</h3>
+      <p>
+        This app uses services from third-party providers (in particular Expo /
+        650 Industries, Inc.). Although we carefully select third-party
+        providers that maintain appropriate privacy standards, we have no direct
+        control over their data processing practices.
+      </p>
+      <p><strong>We assume no liability for:</strong></p>
+      <ul>
+        <li>
+          Data processing by third parties beyond what is described in this
+          privacy policy
+        </li>
+        <li>Changes to the privacy practices of third-party providers</li>
+        <li>Security incidents at third-party providers</li>
+      </ul>
+      <p><strong>Third-party privacy policies:</strong></p>
+      <ul>
+        <li>
+          <a href="https://expo.dev/privacy" target="_blank" rel="noopener"
+            >Expo — expo.dev/privacy</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://policies.google.com/privacy"
+            target="_blank"
+            rel="noopener"
+            >Google — policies.google.com/privacy</a
+          >
+        </li>
+      </ul>
+
+      <div class="divider"></div>
+
+      <h3>16 · Legal Basis for Processing (GDPR)</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Processing</th>
+            <th>Legal Basis</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Local storage of training data</td>
+            <td>Art. 6(1)(b) GDPR (Contract performance)</td>
+          </tr>
+          <tr>
+            <td>Feedback function</td>
+            <td>Art. 6(1)(a) GDPR (Consent through voluntary use)</td>
+          </tr>
+          <tr>
+            <td>App updates via Expo</td>
+            <td>
+              Art. 6(1)(f) GDPR (Legitimate interest in providing up-to-date
+              software)
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="summary-box">
+        <p>
+          <strong>Summary:</strong> ForceTrack is a privacy-friendly fitness
+          training app. All your training data is stored exclusively locally on
+          your device. There is no tracking, no advertising, and no automatic
+          data transmission. Only when using the optional feedback function is
+          anonymous data transmitted.
+        </p>
+        <p class="date-sub">Last updated: February 2026</p>
+      </div>
+    </div>
+
+    <footer>
+      ForceTrack · Patrick Pfüller ·
+      <a href="mailto:app-patrick@web.de">app-patrick@web.de</a>
+    </footer>
+  </body>
+</html>
