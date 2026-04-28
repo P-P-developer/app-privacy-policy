@@ -524,15 +524,16 @@
                 <td><strong>Trainingsübungen</strong></td>
                 <td>
                   Name, Notizen, Geräteeinstellung, Gewicht, Gewichtseinheit,
-                  Wiederholungen, Sätze, Wiederholungen pro Satz, Reihenfolge, Symbol
+                  Wiederholungen, Sätze, Wiederholungen pro Satz, Reihenfolge,
+                  Symbol
                 </td>
               </tr>
               <tr>
                 <td><strong>Trainingssitzungen</strong></td>
                 <td>
                   Übungs-ID, durchgeführtes Gewicht, absolvierte Wiederholungen,
-                  absolvierte Wiederholungen pro Satz,
-                  Status (erledigt/teilweise abgeschlossen/übersprungen), Zeitstempel
+                  absolvierte Wiederholungen pro Satz, Status
+                  (erledigt/teilweise abgeschlossen/übersprungen), Zeitstempel
                 </td>
               </tr>
             </tbody>
@@ -545,10 +546,9 @@
           <p>
             Während einer laufenden Trainingseinheit werden Zwischenstände
             temporär in einem lokalen Schlüssel-Wert-Speicher (KV-Store) auf
-            Ihrem Gerät gesichert, damit Ihr Fortschritt bei einem
-            App-Neustart nicht verloren geht. Diese Daten werden nach
-            Abschluss oder Abbruch der Trainingseinheit gelöscht und
-            verlassen Ihr Gerät nicht.
+            Ihrem Gerät gesichert, damit Ihr Fortschritt bei einem App-Neustart
+            nicht verloren geht. Diese Daten werden nach Abschluss oder Abbruch
+            der Trainingseinheit gelöscht und verlassen Ihr Gerät nicht.
           </p>
         </div>
       </details>
@@ -600,9 +600,8 @@
           <h4>Datenverarbeitung durch Expo</h4>
           <p>
             Auch bei deaktivierter Update-Funktion kann das Expo-Framework
-            grundlegende technische Bibliotheken bereitstellen. Expo ist
-            DSGVO-, CCPA- und Data Privacy Framework-konform. Weitere
-            Informationen:
+            grundlegende technische Bibliotheken bereitstellen. Expo ist DSGVO-,
+            CCPA- und Data Privacy Framework-konform. Weitere Informationen:
             <a href="https://expo.dev/privacy" target="_blank" rel="noopener"
               >expo.dev/privacy</a
             >
@@ -655,8 +654,8 @@
               (<code>INTERNET</code>)
             </td>
             <td>
-              Versand von anonymem Feedback (optional) sowie Laden
-              externer Links (z.&nbsp;B. Datenschutzerklärung)
+              Versand von anonymem Feedback (optional) sowie Laden externer
+              Links (z.&nbsp;B. Datenschutzerklärung)
             </td>
           </tr>
           <tr>
@@ -666,8 +665,8 @@
               (<code>VIBRATE</code>)
             </td>
             <td>
-              Haptisches Feedback bei Benutzerinteraktionen
-              (z.&nbsp;B. Bestätigungen)
+              Haptisches Feedback bei Benutzerinteraktionen (z.&nbsp;B.
+              Bestätigungen)
             </td>
           </tr>
           <tr>
@@ -677,8 +676,8 @@
               (<code>SYSTEM_ALERT_WINDOW</code>)
             </td>
             <td>
-              Nur im Entwicklungsmodus für Debugging-Zwecke verwendet;
-              im regulären Betrieb nicht aktiv
+              Nur im Entwicklungsmodus für Debugging-Zwecke verwendet; im
+              regulären Betrieb nicht aktiv
             </td>
           </tr>
         </tbody>
@@ -723,6 +722,13 @@
         Diese Funktionen dienen der Datensicherung und dem Transfer zwischen
         Geräten. Die Verantwortung für die sichere Aufbewahrung exportierter
         Daten liegt bei Ihnen.
+      </div>
+      <div class="callout callout-warn">
+        ⚠️ Die exportierte Datenbankdatei ist
+        <strong>nicht verschlüsselt</strong>. Da ForceTrack ausschließlich
+        Trainingsdaten (Pläne, Übungen, Sitzungen) speichert und keine sensiblen
+        personenbezogenen Daten erhebt, ist dies unbedenklich. Bewahren Sie
+        exportierte Backups dennoch an einem sicheren Ort auf.
       </div>
 
       <div class="divider"></div>
@@ -773,8 +779,8 @@
           <tr>
             <td>✏️ <strong>Berichtigung</strong> (Art. 16 DSGVO)</td>
             <td>
-              Sie können Ihre Trainingsdaten jederzeit in der App bearbeiten
-              und korrigieren
+              Sie können Ihre Trainingsdaten jederzeit in der App bearbeiten und
+              korrigieren
             </td>
           </tr>
           <tr>
@@ -786,9 +792,7 @@
           </tr>
           <tr>
             <td>⏸️ <strong>Einschränkung</strong> (Art. 18 DSGVO)</td>
-            <td>
-              Sie können die Verarbeitung Ihrer Daten einschränken lassen
-            </td>
+            <td>Sie können die Verarbeitung Ihrer Daten einschränken lassen</td>
           </tr>
           <tr>
             <td>📤 <strong>Datenübertragbarkeit</strong> (Art. 20 DSGVO)</td>
@@ -820,8 +824,8 @@
         diese Einwilligung jederzeit zu widerrufen. Die Rechtmäßigkeit der bis
         zum Widerruf erfolgten Verarbeitung bleibt davon unberührt. Kontaktieren
         Sie uns unter
-        <a href="mailto:app-patrick@web.de">app-patrick@web.de</a>,
-        um bereits übermitteltes Feedback löschen zu lassen.
+        <a href="mailto:app-patrick@web.de">app-patrick@web.de</a>, um bereits
+        übermitteltes Feedback löschen zu lassen.
       </p>
       <h4>Beschwerderecht bei einer Aufsichtsbehörde</h4>
       <p>
@@ -968,7 +972,10 @@
       </p>
       <div class="callout">
         Weitere Informationen zum EU-US Data Privacy Framework:
-        <a href="https://www.dataprivacyframework.gov" target="_blank" rel="noopener"
+        <a
+          href="https://www.dataprivacyframework.gov"
+          target="_blank"
+          rel="noopener"
           >dataprivacyframework.gov</a
         >
       </div>
@@ -977,8 +984,8 @@
       <h3>17 · Pflicht zur Bereitstellung von Daten</h3>
       <p>
         Es besteht keine gesetzliche oder vertragliche Pflicht zur
-        Bereitstellung personenbezogener Daten. Die Nutzung der App ist ohne
-        die Angabe personenbezogener Daten möglich. Die Nutzung der
+        Bereitstellung personenbezogener Daten. Die Nutzung der App ist ohne die
+        Angabe personenbezogener Daten möglich. Die Nutzung der
         Feedback-Funktion ist vollständig freiwillig.
       </p>
 
@@ -1125,8 +1132,8 @@
                 <td><strong>Training sessions</strong></td>
                 <td>
                   Exercise ID, performed weight, completed repetitions,
-                  completed repetitions per set,
-                  status (completed/partially completed/skipped), timestamp
+                  completed repetitions per set, status (completed/partially
+                  completed/skipped), timestamp
                 </td>
               </tr>
             </tbody>
@@ -1172,8 +1179,7 @@
           <p>
             The app was developed using the <strong>Expo</strong> framework (650
             Industries, Inc., USA). The Expo Updates SDK is included in the app,
-            but the update functionality is
-            <strong>currently disabled</strong>.
+            but the update functionality is <strong>currently disabled</strong>.
           </p>
           <h4>Expo Updates (currently disabled)</h4>
           <p>
@@ -1224,8 +1230,8 @@
               (<code>READ_EXTERNAL_STORAGE</code>)
             </td>
             <td>
-              Import database backups to restore your training data
-              (Android 12 and older only)
+              Import database backups to restore your training data (Android 12
+              and older only)
             </td>
           </tr>
           <tr>
@@ -1235,8 +1241,8 @@
               (<code>WRITE_EXTERNAL_STORAGE</code>)
             </td>
             <td>
-              Export database backups to save your training data
-              (Android 12 and older only)
+              Export database backups to save your training data (Android 12 and
+              older only)
             </td>
           </tr>
           <tr>
@@ -1256,9 +1262,7 @@
               <strong>Vibration</strong>
               (<code>VIBRATE</code>)
             </td>
-            <td>
-              Haptic feedback for user interactions (e.g., confirmations)
-            </td>
+            <td>Haptic feedback for user interactions (e.g., confirmations)</td>
           </tr>
           <tr>
             <td>
@@ -1267,8 +1271,8 @@
               (<code>SYSTEM_ALERT_WINDOW</code>)
             </td>
             <td>
-              Used only in development mode for debugging purposes;
-              not active in regular operation
+              Used only in development mode for debugging purposes; not active
+              in regular operation
             </td>
           </tr>
         </tbody>
@@ -1308,6 +1312,12 @@
       <div class="callout">
         These functions are for data backup and transfer between devices. The
         responsibility for the secure storage of exported data lies with you.
+      </div>
+      <div class="callout callout-warn">
+        ⚠️ The exported database file is <strong>not encrypted</strong>. Since
+        ForceTrack stores only training data (plans, exercises, sessions) and
+        does not collect sensitive personal data, this is not a concern.
+        Nevertheless, store exported backups in a secure location.
       </div>
 
       <div class="divider"></div>
@@ -1358,8 +1368,8 @@
           <tr>
             <td>✏️ <strong>Rectification</strong> (Art. 16 GDPR)</td>
             <td>
-              You can edit and correct your training data at any time within
-              the app
+              You can edit and correct your training data at any time within the
+              app
             </td>
           </tr>
           <tr>
@@ -1371,9 +1381,7 @@
           </tr>
           <tr>
             <td>⏸️ <strong>Restriction</strong> (Art. 18 GDPR)</td>
-            <td>
-              You can request restriction of processing of your data
-            </td>
+            <td>You can request restriction of processing of your data</td>
           </tr>
           <tr>
             <td>📤 <strong>Data Portability</strong> (Art. 20 GDPR)</td>
@@ -1546,7 +1554,10 @@
       </p>
       <div class="callout">
         More information on the EU-US Data Privacy Framework:
-        <a href="https://www.dataprivacyframework.gov" target="_blank" rel="noopener"
+        <a
+          href="https://www.dataprivacyframework.gov"
+          target="_blank"
+          rel="noopener"
           >dataprivacyframework.gov</a
         >
       </div>
