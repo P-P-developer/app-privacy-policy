@@ -401,7 +401,6 @@
     </style>
   </head>
   <body>
-    <!-- ======================== HERO ======================== -->
     <div class="hero">
       <div class="hero-icon">🏋️</div>
       <h1>ForceTrack</h1>
@@ -442,12 +441,10 @@
         <a href="#en" class="lang-btn lang-btn-en">🇬🇧 English</a>
       </div>
     </div>
-
-    <!-- ======================== GERMAN ======================== -->
     <div class="container">
       <div class="section-header" id="de">
         <h2>🇩🇪 Datenschutzerklärung</h2>
-        <p class="date">Stand: Februar 2026</p>
+        <p class="date">Stand: April 2026</p>
       </div>
 
       <div class="divider"></div>
@@ -527,14 +524,15 @@
                 <td><strong>Trainingsübungen</strong></td>
                 <td>
                   Name, Notizen, Geräteeinstellung, Gewicht, Gewichtseinheit,
-                  Wiederholungen, Reihenfolge, Symbol
+                  Wiederholungen, Sätze, Wiederholungen pro Satz, Reihenfolge, Symbol
                 </td>
               </tr>
               <tr>
                 <td><strong>Trainingssitzungen</strong></td>
                 <td>
                   Übungs-ID, durchgeführtes Gewicht, absolvierte Wiederholungen,
-                  Status (erledigt/übersprungen), Zeitstempel
+                  absolvierte Wiederholungen pro Satz,
+                  Status (erledigt/teilweise abgeschlossen/übersprungen), Zeitstempel
                 </td>
               </tr>
             </tbody>
@@ -543,6 +541,15 @@
             🔒 Diese Daten verlassen Ihr Gerät nicht und werden nicht an Server
             oder Dritte übertragen.
           </div>
+          <h4>Temporäre Daten</h4>
+          <p>
+            Während einer laufenden Trainingseinheit werden Zwischenstände
+            temporär in einem lokalen Schlüssel-Wert-Speicher (KV-Store) auf
+            Ihrem Gerät gesichert, damit Ihr Fortschritt bei einem
+            App-Neustart nicht verloren geht. Diese Daten werden nach
+            Abschluss oder Abbruch der Trainingseinheit gelöscht und
+            verlassen Ihr Gerät nicht.
+          </p>
         </div>
       </details>
 
@@ -572,34 +579,30 @@
         <div class="details-body">
           <p>
             Die App wurde mit dem Framework <strong>Expo</strong> (650
-            Industries, Inc., USA) entwickelt. Im Rahmen der Nutzung können
-            durch Expo folgende technische Daten verarbeitet werden:
+            Industries, Inc., USA) entwickelt. Das Expo Updates SDK ist in der
+            App enthalten, jedoch ist die Update-Funktionalität
+            <strong>derzeit deaktiviert</strong>.
           </p>
-          <h4>Expo Updates</h4>
+          <h4>Expo Updates (derzeit deaktiviert)</h4>
           <p>
-            Die App nutzt den Dienst „Expo Updates" zur Bereitstellung von
-            App-Aktualisierungen. Bei der Prüfung auf Updates werden folgende
-            <strong>nicht-personenbezogene</strong> technische Daten
-            übermittelt:
+            Die Over-the-Air-Update-Funktion von Expo ist in der aktuellen
+            Version der App <strong>deaktiviert</strong>. Es werden daher
+            <strong>keine</strong> technischen Daten im Rahmen von
+            Update-Prüfungen an Expo-Server übermittelt. App-Updates werden
+            ausschließlich über den Google Play Store bereitgestellt.
           </p>
-          <ul>
-            <li>Betriebssystem des Geräts</li>
-            <li>Projekt-ID des Entwicklers</li>
-            <li>
-              Ein zufällig generierter Token zur Feststellung, ob ein Update
-              bereits heruntergeladen wurde
-            </li>
-          </ul>
           <div class="callout">
-            Es werden dabei <strong>keine</strong> eindeutigen
-            Geräte-Identifikatoren oder personenbezogenen Daten übertragen.
+            Sollte diese Funktion in einer zukünftigen Version aktiviert werden,
+            würden folgende nicht-personenbezogene technische Daten übermittelt:
+            Betriebssystem, Projekt-ID und ein zufällig generierter Token. Diese
+            Datenschutzerklärung wird in diesem Fall entsprechend aktualisiert.
           </div>
           <h4>Datenverarbeitung durch Expo</h4>
           <p>
-            Expo agiert als Auftragsverarbeiter und verarbeitet die genannten
-            technischen Daten ausschließlich zur Bereitstellung der
-            Update-Funktionalität. Expo ist DSGVO-, CCPA- und Data Privacy
-            Framework-konform. Weitere Informationen:
+            Auch bei deaktivierter Update-Funktion kann das Expo-Framework
+            grundlegende technische Bibliotheken bereitstellen. Expo ist
+            DSGVO-, CCPA- und Data Privacy Framework-konform. Weitere
+            Informationen:
             <a href="https://expo.dev/privacy" target="_blank" rel="noopener"
               >expo.dev/privacy</a
             >
@@ -626,12 +629,56 @@
           <tr>
             <td>
               📁
-              <strong>Speicherzugriff</strong>
+              <strong>Speicherzugriff (Lesen)</strong>
               (<code>READ_EXTERNAL_STORAGE</code>)
             </td>
             <td>
-              Import &amp; Export von Datenbank-Backups zur Wiederherstellung
-              Ihrer Trainingsdaten
+              Import von Datenbank-Backups zur Wiederherstellung Ihrer
+              Trainingsdaten (nur Android 12 und älter)
+            </td>
+          </tr>
+          <tr>
+            <td>
+              📁
+              <strong>Speicherzugriff (Schreiben)</strong>
+              (<code>WRITE_EXTERNAL_STORAGE</code>)
+            </td>
+            <td>
+              Export von Datenbank-Backups zur Sicherung Ihrer Trainingsdaten
+              (nur Android 12 und älter)
+            </td>
+          </tr>
+          <tr>
+            <td>
+              🌐
+              <strong>Internetzugriff</strong>
+              (<code>INTERNET</code>)
+            </td>
+            <td>
+              Versand von anonymem Feedback (optional) sowie Laden
+              externer Links (z.&nbsp;B. Datenschutzerklärung)
+            </td>
+          </tr>
+          <tr>
+            <td>
+              📳
+              <strong>Vibration</strong>
+              (<code>VIBRATE</code>)
+            </td>
+            <td>
+              Haptisches Feedback bei Benutzerinteraktionen
+              (z.&nbsp;B. Bestätigungen)
+            </td>
+          </tr>
+          <tr>
+            <td>
+              🪟
+              <strong>Overlay-Berechtigung</strong>
+              (<code>SYSTEM_ALERT_WINDOW</code>)
+            </td>
+            <td>
+              Nur im Entwicklungsmodus für Debugging-Zwecke verwendet;
+              im regulären Betrieb nicht aktiv
             </td>
           </tr>
         </tbody>
@@ -717,23 +764,44 @@
         </thead>
         <tbody>
           <tr>
-            <td>🔍 <strong>Auskunft</strong></td>
+            <td>🔍 <strong>Auskunft</strong> (Art. 15 DSGVO)</td>
             <td>
               Jederzeit Ihre in der App gespeicherten Daten einsehen
               (Trainingshistorie, Statistiken)
             </td>
           </tr>
           <tr>
-            <td>🗑️ <strong>Löschung</strong></td>
+            <td>✏️ <strong>Berichtigung</strong> (Art. 16 DSGVO)</td>
+            <td>
+              Sie können Ihre Trainingsdaten jederzeit in der App bearbeiten
+              und korrigieren
+            </td>
+          </tr>
+          <tr>
+            <td>🗑️ <strong>Löschung</strong> (Art. 17 DSGVO)</td>
             <td>
               Einzelne Übungen, Trainingseinheiten oder gesamte Datenbank durch
               Deinstallation löschen
             </td>
           </tr>
           <tr>
-            <td>📤 <strong>Datenübertragbarkeit</strong></td>
+            <td>⏸️ <strong>Einschränkung</strong> (Art. 18 DSGVO)</td>
+            <td>
+              Sie können die Verarbeitung Ihrer Daten einschränken lassen
+            </td>
+          </tr>
+          <tr>
+            <td>📤 <strong>Datenübertragbarkeit</strong> (Art. 20 DSGVO)</td>
             <td>
               Daten über die Export-Funktion in den Einstellungen exportieren
+            </td>
+          </tr>
+          <tr>
+            <td>✋ <strong>Widerspruch</strong> (Art. 21 DSGVO)</td>
+            <td>
+              Sie haben das Recht, gegen die Verarbeitung Ihrer Daten auf
+              Grundlage berechtigter Interessen (Art. 6 Abs. 1 lit. f)
+              Widerspruch einzulegen
             </td>
           </tr>
           <tr>
@@ -745,6 +813,24 @@
           </tr>
         </tbody>
       </table>
+      <h4>Widerrufsrecht bei Einwilligung</h4>
+      <p>
+        Soweit die Verarbeitung Ihrer Daten auf einer Einwilligung beruht
+        (z.&nbsp;B. bei Nutzung der Feedback-Funktion), haben Sie das Recht,
+        diese Einwilligung jederzeit zu widerrufen. Die Rechtmäßigkeit der bis
+        zum Widerruf erfolgten Verarbeitung bleibt davon unberührt. Kontaktieren
+        Sie uns unter
+        <a href="mailto:app-patrick@web.de">app-patrick@web.de</a>,
+        um bereits übermitteltes Feedback löschen zu lassen.
+      </p>
+      <h4>Beschwerderecht bei einer Aufsichtsbehörde</h4>
+      <p>
+        Unbeschadet eines anderweitigen verwaltungsrechtlichen oder
+        gerichtlichen Rechtsbehelfs steht Ihnen das Recht auf Beschwerde bei
+        einer Aufsichtsbehörde zu, wenn Sie der Ansicht sind, dass die
+        Verarbeitung Ihrer personenbezogenen Daten gegen die DSGVO verstößt
+        (Art. 77 DSGVO).
+      </p>
 
       <div class="divider"></div>
 
@@ -866,8 +952,47 @@
       </ul>
 
       <div class="divider"></div>
+      <h3>16 · Übermittlung in Drittländer</h3>
+      <p>
+        Bei Nutzung der optionalen Feedback-Funktion werden anonyme Daten über
+        Google Apps Script (Google LLC, USA) verarbeitet. Google LLC ist unter
+        dem EU-US Data Privacy Framework zertifiziert, sodass ein angemessenes
+        Datenschutzniveau gewährleistet ist.
+      </p>
+      <p>
+        Das Expo-Framework wird von 650 Industries, Inc. (USA) bereitgestellt.
+        Expo ist ebenfalls unter dem EU-US Data Privacy Framework zertifiziert.
+        Die Expo-Updates-Funktion ist in der aktuellen Version der App
+        deaktiviert, sodass derzeit keine Daten an Expo-Server übermittelt
+        werden.
+      </p>
+      <div class="callout">
+        Weitere Informationen zum EU-US Data Privacy Framework:
+        <a href="https://www.dataprivacyframework.gov" target="_blank" rel="noopener"
+          >dataprivacyframework.gov</a
+        >
+      </div>
 
-      <h3>16 · Rechtsgrundlagen der Verarbeitung (DSGVO)</h3>
+      <div class="divider"></div>
+      <h3>17 · Pflicht zur Bereitstellung von Daten</h3>
+      <p>
+        Es besteht keine gesetzliche oder vertragliche Pflicht zur
+        Bereitstellung personenbezogener Daten. Die Nutzung der App ist ohne
+        die Angabe personenbezogener Daten möglich. Die Nutzung der
+        Feedback-Funktion ist vollständig freiwillig.
+      </p>
+
+      <div class="divider"></div>
+      <h3>18 · Automatisierte Entscheidungsfindung / Profiling</h3>
+      <p>
+        Es findet keine automatisierte Entscheidungsfindung einschließlich
+        Profiling gemäß Art. 22 DSGVO statt. Alle Trainingsdaten werden
+        ausschließlich zur Anzeige und Auswertung für Sie persönlich verwendet.
+      </p>
+
+      <div class="divider"></div>
+
+      <h3>19 · Rechtsgrundlagen der Verarbeitung (DSGVO)</h3>
       <table>
         <thead>
           <tr>
@@ -906,18 +1031,14 @@
           bei Nutzung der optionalen Feedback-Funktion werden anonyme Daten
           übermittelt.
         </p>
-        <p class="date-sub">Letzte Aktualisierung: Februar 2026</p>
+        <p class="date-sub">Letzte Aktualisierung: April 2026</p>
       </div>
-
-      <!-- ======================== DIVIDER ======================== -->
       <div
         style="height: 2px; background: var(--outline); margin: 48px 0"
       ></div>
-
-      <!-- ======================== ENGLISH ======================== -->
       <div class="section-header" id="en">
         <h2>🇬🇧 Privacy Policy</h2>
-        <p class="date">Last updated: February 2026</p>
+        <p class="date">Last updated: April 2026</p>
       </div>
 
       <div class="divider"></div>
@@ -997,14 +1118,15 @@
                 <td><strong>Training exercises</strong></td>
                 <td>
                   Name, notes, equipment settings, weight, weight unit,
-                  repetitions, order, icon
+                  repetitions, sets, repetitions per set, order, icon
                 </td>
               </tr>
               <tr>
                 <td><strong>Training sessions</strong></td>
                 <td>
-                  Exercise ID, performed weight, completed repetitions, status
-                  (completed/skipped), timestamp
+                  Exercise ID, performed weight, completed repetitions,
+                  completed repetitions per set,
+                  status (completed/partially completed/skipped), timestamp
                 </td>
               </tr>
             </tbody>
@@ -1013,6 +1135,14 @@
             🔒 This data does not leave your device and is not transmitted to
             servers or third parties.
           </div>
+          <h4>Temporary Data</h4>
+          <p>
+            During an active training session, intermediate progress is
+            temporarily stored in a local key-value store on your device to
+            prevent data loss if the app restarts. This data is deleted after
+            completing or canceling the training session and never leaves your
+            device.
+          </p>
         </div>
       </details>
 
@@ -1041,32 +1171,29 @@
         <div class="details-body">
           <p>
             The app was developed using the <strong>Expo</strong> framework (650
-            Industries, Inc., USA). When using the app, the following technical
-            data may be processed by Expo:
+            Industries, Inc., USA). The Expo Updates SDK is included in the app,
+            but the update functionality is
+            <strong>currently disabled</strong>.
           </p>
-          <h4>Expo Updates</h4>
+          <h4>Expo Updates (currently disabled)</h4>
           <p>
-            The app uses the "Expo Updates" service to provide app updates. When
-            checking for updates, the following
-            <strong>non-personal</strong> technical data is transmitted:
+            The over-the-air update functionality of Expo is
+            <strong>disabled</strong> in the current version of the app.
+            Therefore, <strong>no</strong> technical data is transmitted to Expo
+            servers for update checks. App updates are provided exclusively
+            through the Google Play Store.
           </p>
-          <ul>
-            <li>Device operating system</li>
-            <li>Developer's project ID</li>
-            <li>
-              A randomly generated token to determine if an update has already
-              been downloaded
-            </li>
-          </ul>
           <div class="callout">
-            <strong>No</strong> unique device identifiers or personal data are
-            transmitted.
+            If this functionality is enabled in a future version, the following
+            non-personal technical data would be transmitted: operating system,
+            project ID, and a randomly generated token. This privacy policy will
+            be updated accordingly.
           </div>
           <h4>Data Processing by Expo</h4>
           <p>
-            Expo acts as a data processor and processes the aforementioned
-            technical data solely for providing update functionality. Expo is
-            GDPR, CCPA, and Data Privacy Framework compliant. More information:
+            Even with disabled update functionality, the Expo framework may
+            provide basic technical libraries. Expo is GDPR, CCPA, and Data
+            Privacy Framework compliant. More information:
             <a href="https://expo.dev/privacy" target="_blank" rel="noopener"
               >expo.dev/privacy</a
             >
@@ -1093,11 +1220,55 @@
           <tr>
             <td>
               📁
-              <strong>Storage Access</strong>
+              <strong>Storage Access (Read)</strong>
               (<code>READ_EXTERNAL_STORAGE</code>)
             </td>
             <td>
-              Import &amp; export database backups to restore your training data
+              Import database backups to restore your training data
+              (Android 12 and older only)
+            </td>
+          </tr>
+          <tr>
+            <td>
+              📁
+              <strong>Storage Access (Write)</strong>
+              (<code>WRITE_EXTERNAL_STORAGE</code>)
+            </td>
+            <td>
+              Export database backups to save your training data
+              (Android 12 and older only)
+            </td>
+          </tr>
+          <tr>
+            <td>
+              🌐
+              <strong>Internet Access</strong>
+              (<code>INTERNET</code>)
+            </td>
+            <td>
+              Sending anonymous feedback (optional) and loading external links
+              (e.g., privacy policy)
+            </td>
+          </tr>
+          <tr>
+            <td>
+              📳
+              <strong>Vibration</strong>
+              (<code>VIBRATE</code>)
+            </td>
+            <td>
+              Haptic feedback for user interactions (e.g., confirmations)
+            </td>
+          </tr>
+          <tr>
+            <td>
+              🪟
+              <strong>Overlay Permission</strong>
+              (<code>SYSTEM_ALERT_WINDOW</code>)
+            </td>
+            <td>
+              Used only in development mode for debugging purposes;
+              not active in regular operation
             </td>
           </tr>
         </tbody>
@@ -1178,22 +1349,42 @@
         </thead>
         <tbody>
           <tr>
-            <td>🔍 <strong>Access</strong></td>
+            <td>🔍 <strong>Access</strong> (Art. 15 GDPR)</td>
             <td>
               View your data stored in the app at any time (training history,
               statistics)
             </td>
           </tr>
           <tr>
-            <td>🗑️ <strong>Deletion</strong></td>
+            <td>✏️ <strong>Rectification</strong> (Art. 16 GDPR)</td>
+            <td>
+              You can edit and correct your training data at any time within
+              the app
+            </td>
+          </tr>
+          <tr>
+            <td>🗑️ <strong>Deletion</strong> (Art. 17 GDPR)</td>
             <td>
               Delete individual exercises, training sessions, or the entire
               database by uninstalling the app
             </td>
           </tr>
           <tr>
-            <td>📤 <strong>Data Portability</strong></td>
+            <td>⏸️ <strong>Restriction</strong> (Art. 18 GDPR)</td>
+            <td>
+              You can request restriction of processing of your data
+            </td>
+          </tr>
+          <tr>
+            <td>📤 <strong>Data Portability</strong> (Art. 20 GDPR)</td>
             <td>Export your data via the export function in settings</td>
+          </tr>
+          <tr>
+            <td>✋ <strong>Objection</strong> (Art. 21 GDPR)</td>
+            <td>
+              You have the right to object to the processing of your data based
+              on legitimate interests (Art. 6(1)(f))
+            </td>
           </tr>
           <tr>
             <td>🎛️ <strong>Full Control</strong></td>
@@ -1204,6 +1395,22 @@
           </tr>
         </tbody>
       </table>
+      <h4>Right to Withdraw Consent</h4>
+      <p>
+        Where the processing of your data is based on consent (e.g., the
+        feedback function), you have the right to withdraw your consent at any
+        time. The lawfulness of processing carried out prior to the withdrawal
+        remains unaffected. Contact us at
+        <a href="mailto:app-patrick@web.de">app-patrick@web.de</a>
+        to request deletion of previously submitted feedback.
+      </p>
+      <h4>Right to Lodge a Complaint</h4>
+      <p>
+        Without prejudice to any other administrative or judicial remedy, you
+        have the right to lodge a complaint with a supervisory authority if you
+        believe that the processing of your personal data infringes the GDPR
+        (Art. 77 GDPR).
+      </p>
 
       <div class="divider"></div>
 
@@ -1324,8 +1531,45 @@
       </ul>
 
       <div class="divider"></div>
+      <h3>16 · Transfer to Third Countries</h3>
+      <p>
+        When using the optional feedback function, anonymous data is processed
+        via Google Apps Script (Google LLC, USA). Google LLC is certified under
+        the EU-US Data Privacy Framework, ensuring an adequate level of data
+        protection.
+      </p>
+      <p>
+        The Expo framework is provided by 650 Industries, Inc. (USA). Expo is
+        also certified under the EU-US Data Privacy Framework. The Expo Updates
+        functionality is disabled in the current version of the app, so no data
+        is currently transmitted to Expo servers.
+      </p>
+      <div class="callout">
+        More information on the EU-US Data Privacy Framework:
+        <a href="https://www.dataprivacyframework.gov" target="_blank" rel="noopener"
+          >dataprivacyframework.gov</a
+        >
+      </div>
 
-      <h3>16 · Legal Basis for Processing (GDPR)</h3>
+      <div class="divider"></div>
+      <h3>17 · Obligation to Provide Data</h3>
+      <p>
+        There is no legal or contractual obligation to provide personal data.
+        The app can be used without providing any personal data. The use of the
+        feedback function is entirely voluntary.
+      </p>
+
+      <div class="divider"></div>
+      <h3>18 · Automated Decision-Making / Profiling</h3>
+      <p>
+        No automated decision-making including profiling pursuant to Art. 22
+        GDPR takes place. All training data is used exclusively for display and
+        analysis for your personal use.
+      </p>
+
+      <div class="divider"></div>
+
+      <h3>19 · Legal Basis for Processing (GDPR)</h3>
       <table>
         <thead>
           <tr>
@@ -1360,7 +1604,7 @@
           data transmission. Only when using the optional feedback function is
           anonymous data transmitted.
         </p>
-        <p class="date-sub">Last updated: February 2026</p>
+        <p class="date-sub">Last updated: April 2026</p>
       </div>
     </div>
 
